@@ -179,7 +179,7 @@ GIÁ TRỊ ĐẶT KIẾN NGHỊ<br/>
 
 
 
-   <button type="submit" id="submit-form" onclick="Sentdata(),Loaddata()">Gửi</button>
+   <button id="submit-form" onclick="Sentdata(),Loaddata()">Gửi</button>
    <div id="test"></div>
    <div id="muiten"></div>
 
@@ -189,7 +189,7 @@ GIÁ TRỊ ĐẶT KIẾN NGHỊ<br/>
 <script type="text/javascript">
 $(document).ready(function()
 {
-   	var submit = $("button[type='submit']");
+   	var submit = $("button[]");
    	submit.click(function()
                {
                   var data = $('form#test-form').serialize();
