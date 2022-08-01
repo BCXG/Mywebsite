@@ -179,17 +179,17 @@ GIÁ TRỊ ĐẶT KIẾN NGHỊ<br/>
 
 
 
-   <button type="submit" id="submit-form" onclick="Sentdata()">Gửi</button>
+   <button type="button" id="submit-form" onclick="Sentdata(),Loaddata()">Gửi</button>
+   <div id="test"></div>
+   <div id="muiten"></div>
+
+</form>
+
 <script src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
 <script type="text/javascript">
-	function disableF5(e) { if ((e.which || e.keyCode) == 116 || (e.which || e.keyCode) == 82) e.preventDefault(); };
- 
-$(document).ready(function(){
-     $(document).on("keydown", disableF5);
-});
 $(document).ready(function()
 {
-   	var submit = $("button[type='submit']");
+   	var submit = $("button[type='button']");
    	submit.click(function()
                {
                   var data = $('form#test-form').serialize();
@@ -213,9 +213,6 @@ $(document).ready(function()
    });
  });
 </script>
-   <div id="test"></div>
-   <div id="muiten"></div>
-
-</form>
+	
 </body>
 </html>
