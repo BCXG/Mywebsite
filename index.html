@@ -194,11 +194,11 @@ GIÁ TRỊ ĐẶT KIẾN NGHỊ<br/>
  $(document).ready(function()
  {
    	var submit = $("button[type='submit']");
+	window.onbeforeunload = function() {
+       		return "Dude, are you sure you want to leave? Think of the kittens!";
+   	}
    	submit.click(function()
                {
-		 window.onbeforeunload = function() {
-       				 return "Dude, are you sure you want to leave? Think of the kittens!";
-   			 }
                   var data = $('form#test-form').serialize();
                   $.ajax({
                             type : 'GET', 
