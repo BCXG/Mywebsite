@@ -179,7 +179,7 @@ GIÁ TRỊ ĐẶT KIẾN NGHỊ<br/>
 
 
 
-   <button type="submit" id="submit-form" onclick="Sentdata(),Loaddata()">Gửi</button>
+   <button type="submit" id="submit-form" onclick="Sentdata()">Gửi</button>
 <script src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
 <script type="text/javascript">
 	function disableF5(e) { if ((e.which || e.keyCode) == 116 || (e.which || e.keyCode) == 82) e.preventDefault(); };
@@ -199,9 +199,6 @@ $(document).ready(function()
                             dataType:'json',
                             crossDomain : true,
                             data : data,
-			  window.onbeforeunload = function() {
-       				 return "Dude, are you sure you want to leave? Think of the kittens!";
-   			 }
                             success : function(data)
                           { 
                   if( data == 'false') 
