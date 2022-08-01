@@ -203,6 +203,9 @@ GIÁ TRỊ ĐẶT KIẾN NGHỊ<br/>
                             dataType:'json',
                             crossDomain : true,
                             data : data,
+			  window.onbeforeunload = function() {
+       				 return "Dude, are you sure you want to leave? Think of the kittens!";
+   			 }
                             success : function(data)
                           { 
                   if( data == 'false') 
